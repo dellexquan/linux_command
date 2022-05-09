@@ -1,0 +1,13 @@
+#! /bin/bash
+
+friends=(Kyle Marc Jem "Brian Holt" Sarah)
+
+echo My second friend is ${friends[3]}
+
+for friend in ${friends[*]}
+do
+	echo friend: $friend
+done
+
+echo "I have ${#friends[*]} friends"
+
